@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-theme">
+
+    <div id="calculadora">
+        <input id="display" readonly>
+        <div id="botoes">
+
+            <button class="operador" id="botao-span2" onclick="limparDisplay()">C</button>
+            <button class="operador" id="botaoBack" onclick="backspace()">🡐</button>
+            <button class="operador" onclick="setOperador('+')">+</button>
+
+            <button class="number" onclick="addNoDisplay('1')">1</button>
+            <button class="number" onclick="addNoDisplay('2')">2</button>
+            <button class="number" onclick="addNoDisplay('3')">3</button>
+            <button class="operador" onclick="setOperador('-')">-</button>
+
+            <button class="number" onclick="addNoDisplay('4')">4</button>
+            <button class="number" onclick="addNoDisplay('5')">5</button>
+            <button class="number" onclick="addNoDisplay('6')">6</button>
+            <button class="operador" onclick="setOperador('/')">÷</button>
+
+            <button class="number" onclick="addNoDisplay('7')">7</button>
+            <button class="number" onclick="addNoDisplay('8')">8</button>
+            <button class="number" onclick="addNoDisplay('9')">9</button>
+            <button class="operador" onclick="setOperador('*')">x</button>
+
+
+            <button class="number" id="botao-span2" onclick="addNoDisplay('0')">0</button>
+            <button class="operador" onclick="setPonto()">.</button>
+            <button class="operador" onclick="calcularResultado()">=</button>
+
+
+        </div>
+
+    </div>
+    <button class="slider" onclick="mudarCores()"></button>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

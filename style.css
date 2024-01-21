@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+#calculadora {
+    display: grid;
+    max-width: 450px;
+    overflow: hidden;
+    border-radius: 40px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#display {
+    width: 95%;
+    font-size: 3em;
+    border: none;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Exo 2', sans-serif;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 25px;
+    gap: 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    font-size: 3em;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Exo 2', sans-serif;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.slider {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+#botao-span2 {
+    grid-column: span 2;
+    width: 90%;
+}
+
+/* Light Theme */
+.light-theme {
+    background-color: hsl(305, 58%, 50%);
+}
+
+.light-theme #display {
+    background-color: hsl(305, 58%, 40%);
+    color: black;
+}
+
+.light-theme #calculadora {
+    background-color: hsl(305, 58%, 45%);
+    box-shadow: 5px 10px hsl(305, 58%, 25%);
+}
+
+.light-theme button {
+    box-shadow: 3px 3px hsl(340, 71%, 25%);
+}
+
+.light-theme button.number {
+    background-color: hsl(340, 96%, 54%);
+    color: black;
+}
+
+.light-theme button.number:hover {
+    background-color: hsl(340, 78%, 40%);
+}
+
+.light-theme button.number:active {
+    background-color: hsl(340, 74%, 35%);
+}
+
+.light-theme button.operador {
+    background-color: hsl(59, 70%, 49%);
+    color: black;
+}
+
+.light-theme button.operador:hover {
+    background-color: hsl(59, 84%, 45%);
+}
+
+.light-theme button.operador:active {
+    background-color: hsl(59, 84%, 40%);
+}
+
+.light-theme button.slider {
+    background-color: white;
+}
+
+
+/* Dark Theme */
+.dark-theme {
+    background-color: hsl(221, 83%, 21%);
+}
+
+.dark-theme #display {
+    background-color: hsl(221, 53%, 32%);
+    color: white;
+}
+
+.dark-theme #calculadora {
+    background-color: hsl(221, 81%, 17%);
+    box-shadow: 5px 10px hsl(221, 81%, 14%);
+}
+
+.dark-theme button {
+    box-shadow: 3px 3px hsl(221, 83%, 21%);
+}
+
+.dark-theme button.number {
+    background-color: hsl(51, 78%, 50%);
+    color: white;
+}
+
+.dark-theme button.number:hover {
+    background-color: hsl(51, 78%, 40%);
+}
+
+.dark-theme button.number:active {
+    background-color: hsl(51, 74%, 35%);
+}
+
+.dark-theme button.operador {
+    background-color: hsl(0, 84%, 55%);
+    color: white;
+}
+
+.dark-theme button.operador:hover {
+    background-color: hsl(0, 84%, 65%);
+}
+
+.dark-theme button.operador:active {
+    background-color: hsl(0, 84%, 70%);
+}
+
+.dark-theme button.slider {
+    background-color: black;
+}
